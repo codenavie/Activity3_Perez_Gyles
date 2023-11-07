@@ -68,6 +68,7 @@ CREATE TABLE IF NOT EXISTS public.HeroItem
     FOREIGN KEY (item_id) REFERENCES Item(item_id)
 );
 
+---Add the query below to hero.sql tab	
 
 /*2. Create new branch named "feat/insert-data*/
 
@@ -154,3 +155,12 @@ VALUES
     (8, 8, 108),  -- Fanny has Thunder Belt
     (9, 9, 109),  -- Leomord has Blade Armor
     (10, 10, 110);  -- Chou has Feather of Heaven
+
+
+---Add the query below to hero.sql tab	
+
+/*3.	Create new branch named "feat/add-column-price"*/
+
+-- add column price
+ALTER TABLE public.item
+ADD COLUMN item_price DECIMAL(10, 2);
