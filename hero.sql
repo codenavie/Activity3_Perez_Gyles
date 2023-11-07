@@ -190,3 +190,11 @@ FROM public.player p
 INNER JOIN public.hero h ON p.hero_id = h.hero_id
 WHERE h.is_active = true;
 
+---Add the query below to hero.sql tab	
+
+/*6	Create new branch named "feat/select-heroes-archers"*/
+
+--Select heroes archer
+SELECT class_name
+FROM public.class
+WHERE class_name LIKE '%Archers%'
